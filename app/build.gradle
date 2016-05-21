@@ -19,15 +19,26 @@ android {
         }
     }
 
+    productFlavors {
+        free{
+            applicationId = "com.udacity.gradle.builditbigger.free"
+        }
+
+        paid{
+            applicationId = "com.udacity.gradle.builditbigger.paid"
+        }
+    }
+
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile project(':jokeandroidlib')
     compile 'com.android.support:appcompat-v7:23.1.1'
-    // Added for AdMob
+    // Added for AdMob (needed for free version only)
+    freeCompile 'com.google.android.gms:play-services:8.4.0'
     compile project(path: ':jokebackend', configuration: 'android-endpoints')
 
-    compile 'com.google.android.gms:play-services:8.4.0'
+
 
 }
