@@ -27,7 +27,7 @@ public class JokeTask extends AsyncTask<Pair<Context,String>, Void, String> {
     protected String doInBackground(Pair<Context,String>... params) {
 
         if(myApiService == null) {
-
+            //Code taken from github example mentioned in instructions
             //Fun fact; if you mistype the url, when you execute the task, it will return the url instead of the service
             MyApi.Builder builder = new MyApi.Builder(AndroidHttp.newCompatibleTransport(), new AndroidJsonFactory(), null)
 

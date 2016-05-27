@@ -44,6 +44,7 @@ public class MainActivity extends ActionBarActivity {
 
         new JokeTask().execute(new Pair<Context, String>(this,""));
 
+        //Showing the progress of the project (getting joke from a java lib)
         //Jokes jokeLib = new Jokes();
         //String joke = jokeLib.getJoke();
         //Intent jokeIntent = new Intent(this, JokeActivity.class);

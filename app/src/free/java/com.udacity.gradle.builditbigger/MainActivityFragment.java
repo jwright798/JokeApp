@@ -18,6 +18,7 @@ public class MainActivityFragment extends Fragment {
     public MainActivityFragment() {
     }
 
+    //Free version of fragment with the ad
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

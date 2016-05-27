@@ -11,6 +11,8 @@ import com.google.api.server.spi.config.Api;
 import com.google.api.server.spi.config.ApiMethod;
 import com.google.api.server.spi.config.ApiNamespace;
 
+//Code taken from https://github.com/GoogleCloudPlatform/gradle-appengine-templates/tree/master/HelloEndpoints
+
 /** An endpoint class we are exposing */
 @Api(
   name = "myApi",
